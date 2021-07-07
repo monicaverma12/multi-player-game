@@ -25,10 +25,10 @@ class Form {
       this.input.hide();
       this.button.hide();
       player.name = this.input.value();
-      playerCount+=1;
-      player.index = playerCount;
+      PlayerCount+=1;
+      player.index = PlayerCount;
       player.update();
-      player.updateCount(playerCount);
+      player.updateCount(PlayerCount);
       this.greeting.html("Hello " + player.name)
       this.greeting.position(130, 100);
     });
