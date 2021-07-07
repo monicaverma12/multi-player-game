@@ -18,9 +18,9 @@ class Game {
   async start(){
     if(GameState === 0){
       player = new Player();
-      var playerCountRef = await database.ref('playerCount').once("value");
+      var playerCountRef = await database.ref('PlayerCount').once("value");
       if(playerCountRef.exists()){
-        playerCount = playerCountRef.val();
+        PlayerCount = playerCountRef.val();
         player.getCount();
       }
       form = new Form()
